@@ -1,3 +1,38 @@
+import React from 'react';
+import Link from 'next/link';
+
+const Home: React.FC = () => {
+  return (
+    <div className="container mx-auto">
+      <h1 className="text-4xl font-bold mb-4">Welcome to MeKindly</h1>
+      <nav>
+        <ul className="flex space-x-4">
+          <li>
+            <Link href="/signup">
+              <span className="bg-blue-500 text-white px-4 py-2 cursor-pointer">
+                Signup
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/login">
+              <span className="bg-blue-500 text-white px-4 py-2 cursor-pointer">
+                Login
+              </span>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Home;
+
+
+
+
+/*
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
@@ -122,3 +157,4 @@ export default function Home() {
     </main>
   )
 }
+*/
